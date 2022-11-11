@@ -3,20 +3,20 @@ import './App.css';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import { Home } from './components/Home';
-import { Books } from './Books';
+import { Books } from './components/Books';
 
 const App = () => {
   return (
+    <>
     <div className="App">
-      {/* <BrowserRouter> */}
-        <Navbar />
+      <Navbar />
         <Switch>
-          <Route path='/' component={Home} />
-          <Route path='/books' render={() => <Books />} />
+          <Route exact path='/' component={Home} />
+          <Route exact path='/books' render={() => <Books />} />
         </Switch>
-      {/* </BrowserRouter> */}
       <Footer />
     </div>
+    </>
   );
 }
 

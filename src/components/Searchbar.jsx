@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Searchbar = () => {
   return (
-    <div classname='searchbar'>
+    <div className='searchbar'>
       <form>
       <input type='text'/>
 
