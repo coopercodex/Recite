@@ -11,26 +11,25 @@ export const Genres = ({ title, apiUrl }) => {
   const getData = async () => {
     await fetch(apiUrl)
       .then(response => response.json())
-      .then(data =>  setBooks(data.items));
+      .then(data => setBooks(data.items));
   }
-  console.log(books)
 
   return (
     <>
-    <div>
-      <h2 className='book-title'>{title}</h2>
-      <div className='main-genre'>
-        {books.map((book, id) => (
-          <div className='main-genre'><img src={book?.volumeInfo.imageLinks.thumbnail} alt='book cover' id={book?.id} key={book?.id} /> 
-            <div className='single-book-title-genre'>{book?.volumeInfo.title}</div>
+      <div>
+        <h2 className='book-title'>{title}</h2>
+        <div className='main-genre'>
+          {books.map((book, id) => (
+            <div className='main-genre'><img src={book?.volumeInfo.imageLinks.thumbnail} alt='book cover' id={book?.id} key={book?.id} />
+              <div className='single-book-title-genre'>{book?.volumeInfo.title}</div>
             </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
-  </>
+    </>
   )
 }
-Genres.prototype = {
-  title: PropTypes.string,
-  apiUrl: PropTypes.string
+Genres.propTypes = {
+  title: PropTypes.string.isRequired,
+  apiUrl: PropTypes.string.isRequired,
 };
