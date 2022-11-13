@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Books } from './Books'
 import { useHistory } from 'react-router-dom'
 import { clear } from '@testing-library/user-event/dist/clear'
+const key = 'AIzaSyDtu7s2zIdQY3NqmJA1IntPDe5_-jySCCE'
 
 
 
@@ -16,14 +17,20 @@ export const Searchbar = ({ setBooks }) => {
   // }, []);
 
   const handleChange = (event) => {
-    const book = event.target.value;
-    setBook(book);
-    // setSearchTerm(event.target.value)
+    let book = event.target.value;
+    if (book === 'bible') {
+      book = 'kingjames'
+      setBook(book)
+    }
+    setBook(book)
   }
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log(book)
-    getData();
+    if (book) {
+      getData()
+    }
+    // setBook('')
+
   }
 
   const getData = async () => {
