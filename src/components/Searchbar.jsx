@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Books } from './Books'
 import { useHistory } from 'react-router-dom'
 import { clear } from '@testing-library/user-event/dist/clear'
-const key = 'AIzaSyDtu7s2zIdQY3NqmJA1IntPDe5_-jySCCE'
+const key = 'AIzaSyDtkwfURWB2svWs7KliBJgLfs0RvGymjSc'
 
 
 
@@ -17,31 +17,29 @@ export const Searchbar = ({ setBooks }) => {
   // }, []);
 
   const handleChange = (event) => {
-    let book = event.target.value;
-    if (book === 'bible') {
-      book = 'kingjames'
-      setBook(book)
+    let currentBook = event.target.value;
+    if (currentBook === 'bible' || currentBook === 'greece') {
+      currentBook = 'kingjames'
+      setBook(currentBook)
     }
-    setBook(book)
+    setBook(currentBook)
+   
   }
   const handleSubmit = (event) => {
     event.preventDefault();
     if (book) {
       getData()
-    }
-    // setBook('')
-
+    } 
+   
   }
 
   const getData = async () => {
     await fetch(`https://www.googleapis.com/books/v1/volumes?q=${book}&key=${key}&maxResults=10`)
       .then(response => response.json())
-      .then(data => { setBooks(data.items) });
+      .then(data => { setBooks(data.items) })
+      .catch(error => {console.log(error)})
   }
-  // const clearInputs = () => {
-  //   // setBooks()
-  //   setBook('')
-  // }
+  
   return (
     <div className='searchbar'>
       <form onSubmit={handleSubmit}>
