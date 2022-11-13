@@ -8,13 +8,19 @@
   text-align: center;
 }
 
+.loading {
+  text-align: center;
+  margin-left: 8rem;
+
+}
 
 .home-link {
   color: black;
   text-decoration: none;
 }
+
 .home-link:hover {
- color: rgb(53, 51, 51)
+  color: rgb(53, 51, 51)
 }
 
 .navbar {
@@ -31,15 +37,33 @@
   height: 13vh;
   border-bottom: 1px solid gray;
 }
+
 .shop {
   color: black;
   text-decoration: none;
 }
+
 .shop:hover {
   font-weight: bold;
 }
-.searchbar {
+
+input {
   margin-right: 3px;
+  background-color: transparent;
+  color: black;
+  font-family: inherit;
+  font-size: 1rem;
+  border-radius: 15px;
+  padding-left: 3px;
+}
+.searchbar button {
+  background-color: transparent;
+  font-size: 1rem;
+}
+
+ button:hover {
+  font-weight: bold;
+  background-color: transparent;
 }
 
 .bookscontainer {
@@ -56,28 +80,39 @@
 }
 
 .main {
+  position: relative;
+  overflow: hidden;
   padding: 10px;
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 3rem;
+  padding-bottom: 3.5rem;
 }
 
 .main-genre {
+  position: relative;
+  overflow: hidden;
   padding: 10px;
   display: flex;
   flex-wrap: wrap;
-}
-.main-image {
-  height: 15rem;
+  padding-bottom: 3.5rem;
 }
 
+.main-image {
+  height: 14rem;
+}
+
+.main-genre img {
+  height: 13rem;
+}
 img {
   box-shadow: 4px 4px 5px rgb(15, 15, 15);
+  /* position: relative; */
 }
- img:hover {
+
+/* img:hover {
   opacity: .9;
   box-shadow: 6px 6px 7px rgb(15, 15, 15);
-}
+} */
 
 .footer {
   color: black;
@@ -101,25 +136,34 @@ img {
 }
 
 .newest-eds {
-margin-bottom: -5px;
+  margin-bottom: -5px;
 }
 
-.single-book-title {
-  max-width: min-content;
-  font-size: large;
-  position: absolute;
-  opacity: 0;
-}
-.single-book-title-genre {
-  max-width: min-content;
-  font-size: large;
-  position: absolute;
-  opacity: 0;
-}
-
-.single-book-title:hover {
+/* .single-book-title:hover {
   padding: 5px;
   color: black;
-  opacity: 1;
-  /* background-color: .5, gray; */
+  opacity: 1; */
+/* background-color: .5, gray; */
+/* } */
+.book-hover {
+  position: absolute;
+  border-top-right-radius: 2px;
+  border-top-left-radius: 2px;
+  box-shadow:  3px 3px 5px black;
+  opacity: 0;
+  background-color: rgb(234, 237, 239);
+  max-height: 100%;
+  position: absolute;
+  overflow: auto;
+  bottom: 16.5rem;
+  padding: .5rem;
+  transform: translateY(100%);
+  transition: transform 0.3s ease-in-out;
+}
+book-hover h4 {
+margin: 0;
+}
+
+.book-hover:hover {
+  opacity: .9;
 }

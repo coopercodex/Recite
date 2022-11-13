@@ -16,38 +16,47 @@ export const Searchbar = ({ setBooks }) => {
   // }, []);
 
   const handleChange = (event) => {
-    const book = event.target.value;
-    setBook(book);
-    // setSearchTerm(event.target.value)
+    let book = event.target.value;
+    if (book === 'bible') {
+      book = 'kingjames'
+      setBook(book)
+    }
+    setBook(book)
   }
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log(book)
-    getData();
+    if (book) {
+      getData()
+    }
+    setBook('')
+
   }
 
   const getData = async () => {
-    await fetch(`https://www.googleapis.com/books/v1/volumes?q=${book}&key=${key}&maxResults=10`)
-      .then(response => response.json())
-      .then(data => { setBooks(data.items) });
+    const response = await fetch(`https://www.googleapis.com/books/v1/volumes?q=${book}&key=${key}&maxResults=10`)
+    const data = await response.json()
+      // .then(response => response.json())
+      // .then(data => {
+      //   console.log(data.items)
+        setBooks(data.items)
+      // });
   }
   // const clearInputs = () => {
   //   // setBooks()
   //   setBook('')
   // }
+  console.log(book)
   return (
     <div className='searchbar'>
       <form onSubmit={handleSubmit}>
         <input
           type='text' required
+          value={book}
           onChange={handleChange}
           placeholder='Search Books...'
         />
         <button type='submit'>Search</button>
       </form>
-      {/* {searchResults.map((item, id) => (
-        <Books books={item} id={item.id} key={item.id} />
-      ))}  */}
     </div>
   )
 }
