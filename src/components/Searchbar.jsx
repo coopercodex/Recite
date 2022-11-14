@@ -29,6 +29,7 @@ export const Searchbar = ({ setBooks }) => {
     event.preventDefault();
     if (book) {
       getData()
+
     } 
    
   }
@@ -40,19 +41,18 @@ export const Searchbar = ({ setBooks }) => {
       .catch(error => {console.log(error)})
   }
   
+
   return (
     <div className='searchbar'>
       <form onSubmit={handleSubmit}>
         <input
           type='text' required
+          value={book}
           onChange={handleChange}
           placeholder='Search Books...'
         />
         <button type='submit'>Search</button>
       </form>
-      {/* {searchResults.map((item, id) => (
-        <Books books={item} id={item.id} key={item.id} />
-      ))}  */}
     </div>
   )
 }

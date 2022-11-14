@@ -1,4 +1,5 @@
 import React from 'react'
+
 import Navbar from './Navbar'
 import { FcDislike } from 'react-icons/fc';
 
@@ -22,7 +23,6 @@ export const Books = ({favs, deleteFav }) => {
           </div>
         ))}
       </div>
-
     </>
  
   ) 

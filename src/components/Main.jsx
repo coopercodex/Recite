@@ -11,7 +11,9 @@ export const Main = () => {
   const [books, setBooks] = useState([]);
   const [isLoading, setisLoading] = useState(false);
   const [hasError, setHasError] = useState(false);
+
   const [favorites, setFavorites] = useState([]);
+
 
   useEffect(() => {
     getData();
@@ -73,9 +75,11 @@ export const Main = () => {
       <Genres title='Classics' apiUrl={endpoints.endPointsClassics} add={addFavorite} favs={favorites} />
       <Genres title='Scifi' apiUrl={endpoints.endPointsScifi} add={addFavorite} favs={favorites} />
       <Genres title='Thrillers' apiUrl={endpoints.endPointsHorror}  add={addFavorite} favs={favorites} />
+
       </div>
       <Footer />
     </>
-  )
+  );
+
 }
 

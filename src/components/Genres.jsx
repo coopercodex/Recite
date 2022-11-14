@@ -8,6 +8,7 @@ export const Genres = ({ title, apiUrl }) => {
   const [books, setBooks] = useState([]);
   const [isLoading, setisLoading] = useState(false);
   const [hasError, setHasError] = useState(false);
+
   const [favorites, setFavorites] = useState([]);
 
   useEffect(() => {
@@ -25,6 +26,7 @@ export const Genres = ({ title, apiUrl }) => {
       setHasError(true);
     }
     setisLoading(false);
+
   }
   const addFavorite = (id) => {
     const data = books.find(item => item.id === id);
@@ -34,8 +36,9 @@ export const Genres = ({ title, apiUrl }) => {
   const deleteFav = (id) => {
     const gone = favorites.filter(item => item.id !== id);
     setFavorites(gone)
-  }
 
+  }
+  console.log(books[4])
   return (
     <>
     <div>
@@ -69,5 +72,5 @@ export const Genres = ({ title, apiUrl }) => {
 }
 Genres.propTypes = {
   title: PropTypes.string.isRequired,
-  apiUrl: PropTypes.string.isRequired,
+  apiUrl: PropTypes.string,
 };
