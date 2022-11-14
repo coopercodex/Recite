@@ -1,0 +1,198 @@
+{
+  "kind": "books#volumes",
+  "totalItems": 1136,
+  "items": [
+      {
+          "kind": "books#volume",
+          "id": "_tYuEAAAQBAJ",
+          "etag": "QEqBD7WSM1w",
+          "selfLink": "https://www.googleapis.com/books/v1/volumes/_tYuEAAAQBAJ",
+          "volumeInfo": {
+              "title": "The Substance of Fiction",
+              "subtitle": "Literary Objects in China, 1550–1775",
+              "authors": [
+                  "Sophie Volpp"
+              ],
+              "publisher": "Columbia University Press",
+              "publishedDate": "2022-06-28",
+              "description": "Do the portrayals of objects in literary texts represent historical evidence about the material culture of the past? Or are things in books more than things in the world? Sophie Volpp considers fictional objects of the late Ming and Qing that defy being read as illustrative of historical things. Instead, she argues, fictional objects are often signs of fictionality themselves, calling attention to the nature of the relationship between literature and materiality. Volpp examines a series of objects—a robe, a box and a shell, a telescope, a plate-glass mirror, and a painting—drawn from the canonical works frequently mined for information about late imperial material culture, including the novels The Plum in the Golden Vase and The Story of the Stone as well as the short fiction of Feng Menglong, Ling Mengchu, and Li Yu. She argues that although fictional objects invite readers to think of them as illustrative, in fact, inconsistent and discontinuous representation disconnects the literary object from potential historical analogues. The historical resonances of literary objects illuminate the rhetorical strategies of individual works of fiction and, more broadly, conceptions of fictionality in the Ming and Qing. Rather than offering a transparent lens on the past, fictional objects train the reader to be aware of the fallibility of perception. A deeply insightful analysis of late Ming and Qing texts and reading practices, The Substance of Fiction has important implications for Chinese literary studies, history, and art history, as well as the material turn in the humanities.",
+              "industryIdentifiers": [
+                  {
+                      "type": "ISBN_13",
+                      "identifier": "9780231553223"
+                  },
+                  {
+                      "type": "ISBN_10",
+                      "identifier": "0231553226"
+                  }
+              ],
+              "readingModes": {
+                  "text": true,
+                  "image": true
+              },
+              "printType": "BOOK",
+              "categories": [
+                  "Literary Criticism"
+              ],
+              "maturityRating": "NOT_MATURE",
+              "allowAnonLogging": false,
+              "contentVersion": "1.1.1.0.preview.3",
+              "panelizationSummary": {
+                  "containsEpubBubbles": false,
+                  "containsImageBubbles": false
+              },
+              "imageLinks": {
+                  "smallThumbnail": "http://books.google.com/books/content?id=_tYuEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                  "thumbnail": "http://books.google.com/books/content?id=_tYuEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+              },
+              "language": "en",
+              "previewLink": "http://books.google.com/books?id=_tYuEAAAQBAJ&printsec=frontcover&dq=fiction&hl=&cd=1&source=gbs_api",
+              "infoLink": "https://play.google.com/store/books/details?id=_tYuEAAAQBAJ&source=gbs_api",
+              "canonicalVolumeLink": "https://play.google.com/store/books/details?id=_tYuEAAAQBAJ"
+          },
+          "saleInfo": {
+              "country": "US",
+              "saleability": "FOR_SALE",
+              "isEbook": true,
+              "listPrice": {
+                  "amount": 34.99,
+                  "currencyCode": "USD"
+              },
+              "retailPrice": {
+                  "amount": 19.24,
+                  "currencyCode": "USD"
+              },
+              "buyLink": "https://play.google.com/store/books/details?id=_tYuEAAAQBAJ&rdid=book-_tYuEAAAQBAJ&rdot=1&source=gbs_api",
+              "offers": [
+                  {
+                      "finskyOfferType": 1,
+                      "listPrice": {
+                          "amountInMicros": 34990000,
+                          "currencyCode": "USD"
+                      },
+                      "retailPrice": {
+                          "amountInMicros": 19240000,
+                          "currencyCode": "USD"
+                      },
+                      "giftable": true
+                  }
+              ]
+          },
+          "accessInfo": {
+              "country": "US",
+              "viewability": "PARTIAL",
+              "embeddable": true,
+              "publicDomain": false,
+              "textToSpeechPermission": "ALLOWED",
+              "epub": {
+                  "isAvailable": true,
+                  "acsTokenLink": "http://books.google.com/books/download/The_Substance_of_Fiction-sample-epub.acsm?id=_tYuEAAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+              },
+              "pdf": {
+                  "isAvailable": true,
+                  "acsTokenLink": "http://books.google.com/books/download/The_Substance_of_Fiction-sample-pdf.acsm?id=_tYuEAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+              },
+              "webReaderLink": "http://play.google.com/books/reader?id=_tYuEAAAQBAJ&hl=&source=gbs_api",
+              "accessViewStatus": "SAMPLE",
+              "quoteSharingAllowed": false
+          },
+          "searchInfo": {
+              "textSnippet": "Volpp examines a series of objects—a robe, a box and a shell, a telescope, a plate-glass mirror, and a painting—drawn from the canonical works frequently mined for information about late imperial material culture, including the novels ..."
+          }
+      },
+      {
+          "kind": "books#volume",
+          "id": "Ws1uEAAAQBAJ",
+          "etag": "RbnMsrnwkTc",
+          "selfLink": "https://www.googleapis.com/books/v1/volumes/Ws1uEAAAQBAJ",
+          "volumeInfo": {
+              "title": "Connection",
+              "subtitle": "A Cyberpunk Thriller",
+              "authors": [
+                  "Michael Robertson"
+              ],
+              "publisher": "Michael Robertson",
+              "publishedDate": "2022-05-06",
+              "description": "For as long as Dragon can remember, he’s lived in a lead-lined box. It might be for his own good, but he’s under no illusion he’s still a prisoner. Nuclear war has left the world uninhabitable. With radiation levels so high, the only way to survive is encased in lead. Dragon’s only connection to the world comes through competitive gaming. A community linked by high-speed networks with every gamer fighting for the monthly prize. A prize coveted almost as much as breathable air. But winning is far from easy. Maybe it’s the taking part that counts. Who’s Dragon kidding? He wants to win this month as much as any other. Except, this month isn't like any other. For Dragon, things are about to change. Connection: Neon Horizon book four is a fast-paced cyberpunk thriller. If you like dazzling neon dystopian landscapes, where entertainment, credits, and the latest street drugs are all worth more than human life, then you’ll love this hard-hitting grimy glimpse into the hyper-cities of the future.",
+              "industryIdentifiers": [
+                  {
+                      "type": "OTHER",
+                      "identifier": "PKEY:6610000360666"
+                  }
+              ],
+              "readingModes": {
+                  "text": true,
+                  "image": true
+              },
+              "pageCount": 392,
+              "printType": "BOOK",
+              "categories": [
+                  "Fiction"
+              ],
+              "maturityRating": "NOT_MATURE",
+              "allowAnonLogging": false,
+              "contentVersion": "0.4.4.0.preview.3",
+              "panelizationSummary": {
+                  "containsEpubBubbles": false,
+                  "containsImageBubbles": false
+              },
+              "imageLinks": {
+                  "smallThumbnail": "http://books.google.com/books/content?id=Ws1uEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                  "thumbnail": "http://books.google.com/books/content?id=Ws1uEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+              },
+              "language": "en",
+              "previewLink": "http://books.google.com/books?id=Ws1uEAAAQBAJ&printsec=frontcover&dq=fiction&hl=&cd=2&source=gbs_api",
+              "infoLink": "https://play.google.com/store/books/details?id=Ws1uEAAAQBAJ&source=gbs_api",
+              "canonicalVolumeLink": "https://play.google.com/store/books/details?id=Ws1uEAAAQBAJ"
+          },
+          "saleInfo": {
+              "country": "US",
+              "saleability": "FOR_SALE",
+              "isEbook": true,
+              "listPrice": {
+                  "amount": 3.99,
+                  "currencyCode": "USD"
+              },
+              "retailPrice": {
+                  "amount": 3.99,
+                  "currencyCode": "USD"
+              },
+              "buyLink": "https://play.google.com/store/books/details?id=Ws1uEAAAQBAJ&rdid=book-Ws1uEAAAQBAJ&rdot=1&source=gbs_api",
+              "offers": [
+                  {
+                      "finskyOfferType": 1,
+                      "listPrice": {
+                          "amountInMicros": 3990000,
+                          "currencyCode": "USD"
+                      },
+                      "retailPrice": {
+                          "amountInMicros": 3990000,
+                          "currencyCode": "USD"
+                      },
+                      "giftable": true
+                  }
+              ]
+          },
+          "accessInfo": {
+              "country": "US",
+              "viewability": "PARTIAL",
+              "embeddable": true,
+              "publicDomain": false,
+              "textToSpeechPermission": "ALLOWED",
+              "epub": {
+                  "isAvailable": true,
+                  "acsTokenLink": "http://books.google.com/books/download/Connection-sample-epub.acsm?id=Ws1uEAAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+              },
+              "pdf": {
+                  "isAvailable": true,
+                  "acsTokenLink": "http://books.google.com/books/download/Connection-sample-pdf.acsm?id=Ws1uEAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+              },
+              "webReaderLink": "http://play.google.com/books/reader?id=Ws1uEAAAQBAJ&hl=&source=gbs_api",
+              "accessViewStatus": "SAMPLE",
+              "quoteSharingAllowed": false
+          },
+          "searchInfo": {
+              "textSnippet": "Nuclear war has left the world uninhabitable. With radiation levels so high, the only way to survive is encased in lead. Dragon’s only connection to the world comes through competitive gaming."
+          }
+      }
+    ]}

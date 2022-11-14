@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Books } from './Books'
 import { useHistory } from 'react-router-dom'
 import { clear } from '@testing-library/user-event/dist/clear'
+const key = 'AIzaSyDtkwfURWB2svWs7KliBJgLfs0RvGymjSc'
 
 
 
@@ -11,41 +12,37 @@ export const Searchbar = ({ setBooks }) => {
 
   const [book, setBook] = useState('')
   const [searchResults, setSearchResults] = useState([])
+  // const [searchError, ]
   // useEffect(() => {
   //     getData();
   // }, []);
 
   const handleChange = (event) => {
-    let book = event.target.value;
-    if (book === 'bible') {
-      book = 'kingjames'
-      setBook(book)
+    let currentBook = event.target.value;
+    if (currentBook === 'bible') {
+      currentBook = 'kingjames'
+      setBook(currentBook)
     }
-    setBook(book)
+    setBook(currentBook)
+   
   }
   const handleSubmit = (event) => {
     event.preventDefault();
     if (book) {
       getData()
-    }
-    setBook('')
 
+    } 
+   
   }
 
   const getData = async () => {
-    const response = await fetch(`https://www.googleapis.com/books/v1/volumes?q=${book}&key=${key}&maxResults=10`)
-    const data = await response.json()
-      // .then(response => response.json())
-      // .then(data => {
-      //   console.log(data.items)
-        setBooks(data.items)
-      // });
+    await fetch(`https://www.googleapis.com/books/v1/volumes?q=${book}&key=${key}&maxResults=10`)
+      .then(response => response.json())
+      .then(data => { setBooks(data.items) })
+      .catch(error => {console.log(error)})
   }
-  // const clearInputs = () => {
-  //   // setBooks()
-  //   setBook('')
-  // }
-  console.log(book)
+  
+
   return (
     <div className='searchbar'>
       <form onSubmit={handleSubmit}>
