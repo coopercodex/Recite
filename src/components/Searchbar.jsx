@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Books } from './Books'
 import { useHistory } from 'react-router-dom'
 import { clear } from '@testing-library/user-event/dist/clear'
+const key = 'AIzaSyDtkwfURWB2svWs7KliBJgLfs0RvGymjSc'
 
 
 
@@ -16,38 +17,42 @@ export const Searchbar = ({ setBooks }) => {
   // }, []);
 
   const handleChange = (event) => {
-    const book = event.target.value;
-    setBook(book);
-    // setSearchTerm(event.target.value)
+    let currentBook = event.target.value;
+    if (currentBook === 'bible' || currentBook === 'greece') {
+      currentBook = 'kingjames'
+      setBook(currentBook)
+    }
+    setBook(currentBook)
+   
   }
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log(book)
-    getData();
+    if (book) {
+      getData()
+
+    } 
+   
   }
 
   const getData = async () => {
     await fetch(`https://www.googleapis.com/books/v1/volumes?q=${book}&key=${key}&maxResults=10`)
       .then(response => response.json())
-      .then(data => { setBooks(data.items) });
+      .then(data => { setBooks(data.items) })
+      .catch(error => {console.log(error)})
   }
-  // const clearInputs = () => {
-  //   // setBooks()
-  //   setBook('')
-  // }
+  
+
   return (
     <div className='searchbar'>
       <form onSubmit={handleSubmit}>
         <input
           type='text' required
+          value={book}
           onChange={handleChange}
           placeholder='Search Books...'
         />
         <button type='submit'>Search</button>
       </form>
-      {/* {searchResults.map((item, id) => (
-        <Books books={item} id={item.id} key={item.id} />
-      ))}  */}
     </div>
   )
 }

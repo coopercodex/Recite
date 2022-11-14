@@ -7,7 +7,6 @@ import { useHistory } from 'react-router-dom';
 const Navbar = ({setBooks}) => {
 
   return (
-
     <div className='navbar'>
       <Link to='/' onClick={() => window.location.reload()} className='home-link' ><h1>Recite</h1></Link>
       <div>
