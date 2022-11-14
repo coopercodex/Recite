@@ -1,4 +1,4 @@
-const key = 'AIzaSyDtkwfURWB2svWs7KliBJgLfs0RvGymjSc'
+const key = 'AIzaSyAog16sScVOZy2f7FuIManjZ71-CMLgkVA'
 
 const endpoints = {
   endPointsNewest: `https://www.googleapis.com/books/v1/volumes?q=fiction&key=${key}`,

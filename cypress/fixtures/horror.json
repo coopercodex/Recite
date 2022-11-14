@@ -1,40 +1,42 @@
 {
   "kind": "books#volumes",
-  "totalItems": 4679,
+  "totalItems": 823,
   "items": [
       {
           "kind": "books#volume",
-          "id": "r1BDDwAAQBAJ",
-          "etag": "P0oXbF3+H/Q",
-          "selfLink": "https://www.googleapis.com/books/v1/volumes/r1BDDwAAQBAJ",
+          "id": "wlA8EAAAQBAJ",
+          "etag": "Axrt2ngWlT0",
+          "selfLink": "https://www.googleapis.com/books/v1/volumes/wlA8EAAAQBAJ",
           "volumeInfo": {
-              "title": "Horror Film",
-              "subtitle": "A Critical Introduction",
+              "title": "Nightmare Fuel",
+              "subtitle": "The Science of Horror Films",
               "authors": [
-                  "Murray Leeder"
+                  "Nina Nesseth"
               ],
-              "publisher": "Bloomsbury Publishing USA",
-              "publishedDate": "2018-01-25",
-              "description": "An introduction to the horror film genre.",
+              "publisher": "Tor Nightfire",
+              "publishedDate": "2022-07-26",
+              "description": "Nightmare Fuel by Nina Nesseth is a pop-science look at fear, how and why horror films get under our skin, and why we keep coming back for more. Do you like scary movies? Have you ever wondered why? Nina Nesseth knows what scares you. She also knows why. In Nightmare Fuel, Nesseth explores the strange and often unexpected science of fear through the lenses of psychology and physiology. How do horror films get under our skin? What about them keeps us up at night, even days later? And why do we keep coming back for more? Horror films promise an experience: fear. From monsters that hide in plain sight to tension-building scores, every aspect of a horror film is crafted to make your skin crawl. But how exactly do filmmakers pull this off? The truth is, there’s more to it than just loud noises and creepy images. With the affection of a true horror fan and the critical analysis of a scientist, Nesseth explains how audiences engage horror with both their brains and bodies, and teases apart the elements that make horror films tick. Nightmare Fuel covers everything from jump scares to creature features, serial killers to the undead, and the fears that stick around to those that fade over time. With in-depth discussions and spotlight features of some of horror’s most popular films—from classics like The Exorcist to modern hits like Hereditary—and interviews with directors, film editors, composers, and horror academics, Nightmare Fuel is a deep dive into the science of fear, a celebration of the genre, and a survival guide for going to bed after the credits roll. “An invaluable resource, a history of the horror genre, a love letter to the scary movie—it belongs on any horror reader’s bookshelf.” —Lisa Kröger, Bram Stoker Award-winning author of Monster, She Wrote",
               "industryIdentifiers": [
                   {
                       "type": "ISBN_13",
-                      "identifier": "9781501314438"
+                      "identifier": "9781250765215"
                   },
                   {
                       "type": "ISBN_10",
-                      "identifier": "1501314432"
+                      "identifier": "1250765218"
                   }
               ],
               "readingModes": {
-                  "text": false,
-                  "image": true
+                  "text": true,
+                  "image": false
               },
-              "pageCount": 289,
+              "pageCount": 0,
               "printType": "BOOK",
               "categories": [
                   "Performing Arts"
               ],
+              "averageRating": 5,
+              "ratingsCount": 1,
               "maturityRating": "NOT_MATURE",
               "allowAnonLogging": false,
               "contentVersion": "preview-1.0.0",
@@ -43,13 +45,13 @@
                   "containsImageBubbles": false
               },
               "imageLinks": {
-                  "smallThumbnail": "http://books.google.com/books/content?id=r1BDDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
-                  "thumbnail": "http://books.google.com/books/content?id=r1BDDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                  "smallThumbnail": "http://books.google.com/books/content?id=wlA8EAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+                  "thumbnail": "http://books.google.com/books/content?id=wlA8EAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
               },
               "language": "en",
-              "previewLink": "http://books.google.com/books?id=r1BDDwAAQBAJ&printsec=frontcover&dq=horror&hl=&cd=1&source=gbs_api",
-              "infoLink": "http://books.google.com/books?id=r1BDDwAAQBAJ&dq=horror&hl=&source=gbs_api",
-              "canonicalVolumeLink": "https://books.google.com/books/about/Horror_Film.html?hl=&id=r1BDDwAAQBAJ"
+              "previewLink": "http://books.google.com/books?id=wlA8EAAAQBAJ&dq=horror&hl=&cd=1&source=gbs_api",
+              "infoLink": "http://books.google.com/books?id=wlA8EAAAQBAJ&dq=horror&hl=&source=gbs_api",
+              "canonicalVolumeLink": "https://books.google.com/books/about/Nightmare_Fuel.html?hl=&id=wlA8EAAAQBAJ"
           },
           "saleInfo": {
               "country": "US",
@@ -58,25 +60,23 @@
           },
           "accessInfo": {
               "country": "US",
-              "viewability": "PARTIAL",
-              "embeddable": true,
+              "viewability": "NO_PAGES",
+              "embeddable": false,
               "publicDomain": false,
               "textToSpeechPermission": "ALLOWED",
               "epub": {
                   "isAvailable": false
               },
               "pdf": {
-                  "isAvailable": true,
-                  "acsTokenLink": "http://books.google.com/books/download/Horror_Film-sample-pdf.acsm?id=r1BDDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                  "isAvailable": false
               },
-              "webReaderLink": "http://play.google.com/books/reader?id=r1BDDwAAQBAJ&hl=&source=gbs_api",
-              "accessViewStatus": "SAMPLE",
+              "webReaderLink": "http://play.google.com/books/reader?id=wlA8EAAAQBAJ&hl=&source=gbs_api",
+              "accessViewStatus": "NONE",
               "quoteSharingAllowed": false
           },
           "searchInfo": {
-              "textSnippet": "An introduction to the horror film genre."
+              "textSnippet": "Nightmare Fuel by Nina Nesseth is a pop-science look at fear, how and why horror films get under our skin, and why we keep coming back for more. Do you like scary movies? Have you ever wondered why? Nina Nesseth knows what scares you."
           }
-      }
-        ]
-        }
-      
+    }
+  ]
+}
