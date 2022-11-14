@@ -1,12 +1,12 @@
-import React from 'react'
-
-import Navbar from './Navbar'
+import React from 'react';
 import { FcDislike } from 'react-icons/fc';
 
 export const Books = ({favs, deleteFav }) => {
-  console.log(favs)
   return (
     <>
+     {!favs.length && <div className='loading'>
+        <img className='main' src='http://media0.giphy.com/media/1sSfhxzWHJ4vC/giphy.gif' alt='loading' />
+      </div>}
      {favs.length > 0 ? <h1>Favorites: {favs[0]?.volumeInfo.categories[0]} </h1> : <h1>Add Favs...</h1> }
      
       <div className='main'>

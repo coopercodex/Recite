@@ -14,23 +14,23 @@ export const Main = () => {
 
   const [favorites, setFavorites] = useState([]);
 
-
   useEffect(() => {
     getData();
   }, []);
-
+  
   const getData = async () => {
     setisLoading(true);
     setHasError(false);
     try {
       await fetch(endpoints.endPointsNewest)
-        .then(response => response.json())
-        .then(data => { setBooks(data.items) });
+      .then(response => response.json())
+      .then(data => { setBooks(data.items) });
     } catch (error) {
       setHasError(true);
     }
     setisLoading(false);
   }
+ 
   const addFavorite = (id) => {
     const data = books.find(item => item.id === id);
     setFavorites([...favorites, data])
@@ -47,13 +47,16 @@ export const Main = () => {
   }
   return (
     <>
+    {!books.length && <div className='loading'>
+        <img className='main' src='https://media0.giphy.com/media/WoWm8YzFQJg5i/giphy.gif' alt='loading' />
+      </div>}
     <Navbar setBooks={setBooks} />
     <h2 className='newest-eds'>Popular Releases</h2>
     <div className='main'>
       {hasError && <p>Something went wrong...</p>}
       {isLoading ? (
       <div className='loading'>
-        <img className='main' src='https://media.tenor.com/wfEN4Vd_GYsAAAAM/loading.gif' alt='loading' />
+        <img className='main' src='https://media0.giphy.com/media/WoWm8YzFQJg5i/giphy.gif'  alt='loading' />
       </div>
       ) : (books.map((book, id) => (
         <div className='main'>
@@ -69,6 +72,9 @@ export const Main = () => {
       )))}
     </div>
     <div>
+    {!books && <div className='loading'>
+        <img className='main' src='https://media0.giphy.com/media/WoWm8YzFQJg5i/giphy.gif' alt='loading' />
+      </div>}
       <Books books={books} add={addFavorite} favs={favorites}  deleteFav={deleteFav} />
       <Genres title='Coding' apiUrl={endpoints.endPointsCoding} add={addFavorite} favs={favorites} />
       <Genres title='Art' apiUrl={endpoints.endPointsArt} add={addFavorite} favs={favorites} />
