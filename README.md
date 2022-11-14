@@ -1,5 +1,6 @@
 # Recite
-- screen shot here
+![image](https://user-images.githubusercontent.com/105816411/201587799-b9421b11-8977-444a-bc60-0b66268e4bf4.png)
+
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -27,7 +28,7 @@
 
 ## Project Demo
 
-
+https://gfycat.com/heftypessimisticdormouse
 
 
 
