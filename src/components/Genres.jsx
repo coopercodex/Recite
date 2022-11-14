@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { FcLike } from 'react-icons/fc';
 import PropTypes from 'prop-types';
 import { Books } from './Books';
-import { Main } from './Main';
+// import { Main } from './Main';
 
 export const Genres = ({ title, apiUrl }) => {
   const [books, setBooks] = useState([]);
@@ -38,9 +38,12 @@ export const Genres = ({ title, apiUrl }) => {
     setFavorites(gone)
 
   }
-  console.log(books[4])
+  // console.log(books[4])
   return (
     <>
+    {!books && <div className='loading'>
+        <img className='main' src='https://media0.giphy.com/media/WoWm8YzFQJg5i/giphy.gif' alt='loading' />
+      </div>}
     <div>
       <h1 className='book-title'>{title}</h1>
       <div className='main-genre'>
@@ -50,6 +53,7 @@ export const Genres = ({ title, apiUrl }) => {
             <img className='main' src='https://media.tenor.com/wfEN4Vd_GYsAAAAM/loading.gif' alt='loading' />
           </div>
         ) : (books.map((book, id) => (
+          
           <div className='main-genre'><img src={book?.volumeInfo.imageLinks.thumbnail} alt='book cover' id={book?.id} key={book?.id} />
             <div className='book-hover'>
             <h3>Fav? <FcLike onClick={() => addFavorite(book.id)} /> </h3>

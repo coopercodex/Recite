@@ -1,21 +1,15 @@
-import React, { useState, useEffect } from 'react'
-import { Books } from './Books'
-import { useHistory } from 'react-router-dom'
-import { clear } from '@testing-library/user-event/dist/clear'
+import React, { useState } from 'react'
 const key = 'AIzaSyDtkwfURWB2svWs7KliBJgLfs0RvGymjSc'
 
 
 
 
 export const Searchbar = ({ setBooks }) => {
-  // let history = useHistory();
+  
 
   const [book, setBook] = useState('')
-  const [searchResults, setSearchResults] = useState([])
-  // const [searchError, ]
-  // useEffect(() => {
-  //     getData();
-  // }, []);
+  
+
 
   const handleChange = (event) => {
     let currentBook = event.target.value;
@@ -30,8 +24,8 @@ export const Searchbar = ({ setBooks }) => {
     event.preventDefault();
     if (book) {
       getData()
-
     } 
+    
    
   }
 

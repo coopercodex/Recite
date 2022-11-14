@@ -9,8 +9,9 @@
 }
 
 .loading {
-  text-align: center;
-  margin-left: 8rem;
+  display: flex;
+  align-self: center;
+  margin: 0;
 
 }
 
