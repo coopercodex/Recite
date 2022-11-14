@@ -67,6 +67,10 @@ input {
   background-color: transparent;
 }
 
+.newest-eds {
+  padding-top: 2rem;
+}
+
 .bookscontainer {
   display: flex;
   width: 100%;
@@ -86,7 +90,8 @@ input {
   padding: 10px;
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 3.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2.5rem;
 }
 
 .main-genre {
@@ -167,4 +172,11 @@ margin: 0;
 
 .book-hover:hover {
   opacity: .9;
+}
+.loading {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
 }

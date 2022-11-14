@@ -38,11 +38,11 @@ export const Genres = ({ title, apiUrl }) => {
     setFavorites(gone)
 
   }
-  // console.log(books[4])
+
   return (
     <>
     {!books && <div className='loading'>
-        <img className='main' src='https://media0.giphy.com/media/WoWm8YzFQJg5i/giphy.gif' alt='loading' />
+        <img className='loading' src='https://media0.giphy.com/media/WoWm8YzFQJg5i/giphy.gif' alt='loading' />
       </div>}
     <div>
       <h1 className='book-title'>{title}</h1>
@@ -50,7 +50,7 @@ export const Genres = ({ title, apiUrl }) => {
         {hasError && <h1>Something went wrong...</h1>}
         {isLoading ? (
           <div className='loading'>
-            <img className='main' src='https://media.tenor.com/wfEN4Vd_GYsAAAAM/loading.gif' alt='loading' />
+            <img className='loading' src='https://media.tenor.com/wfEN4Vd_GYsAAAAM/loading.gif' alt='loading' />
           </div>
         ) : (books.map((book, id) => (
           
@@ -70,7 +70,7 @@ export const Genres = ({ title, apiUrl }) => {
     </div>
     <div>
         </div>
-        <Books books={books} add={addFavorite} favs={favorites} deleteFav={deleteFav} />
+        <Books books={books} add={addFavorite} favs={favorites} deleteFav={deleteFav} key={books} />
   </>
   )
 }
