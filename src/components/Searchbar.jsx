@@ -12,13 +12,15 @@ export const Searchbar = ({ setBooks }) => {
 
   const [book, setBook] = useState('')
   const [searchResults, setSearchResults] = useState([])
+  // const [searchError, ]
   // useEffect(() => {
   //     getData();
   // }, []);
 
   const handleChange = (event) => {
     let currentBook = event.target.value;
-    if (currentBook === 'bible' || currentBook === 'greece') {
+
+    if (currentBook === 'bible') {
       currentBook = 'kingjames'
       setBook(currentBook)
     }

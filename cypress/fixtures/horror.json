@@ -1,0 +1,82 @@
+{
+  "kind": "books#volumes",
+  "totalItems": 4679,
+  "items": [
+      {
+          "kind": "books#volume",
+          "id": "r1BDDwAAQBAJ",
+          "etag": "P0oXbF3+H/Q",
+          "selfLink": "https://www.googleapis.com/books/v1/volumes/r1BDDwAAQBAJ",
+          "volumeInfo": {
+              "title": "Horror Film",
+              "subtitle": "A Critical Introduction",
+              "authors": [
+                  "Murray Leeder"
+              ],
+              "publisher": "Bloomsbury Publishing USA",
+              "publishedDate": "2018-01-25",
+              "description": "An introduction to the horror film genre.",
+              "industryIdentifiers": [
+                  {
+                      "type": "ISBN_13",
+                      "identifier": "9781501314438"
+                  },
+                  {
+                      "type": "ISBN_10",
+                      "identifier": "1501314432"
+                  }
+              ],
+              "readingModes": {
+                  "text": false,
+                  "image": true
+              },
+              "pageCount": 289,
+              "printType": "BOOK",
+              "categories": [
+                  "horror"
+              ],
+              "maturityRating": "NOT_MATURE",
+              "allowAnonLogging": false,
+              "contentVersion": "preview-1.0.0",
+              "panelizationSummary": {
+                  "containsEpubBubbles": false,
+                  "containsImageBubbles": false
+              },
+              "imageLinks": {
+                  "smallThumbnail": "http://books.google.com/books/content?id=r1BDDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                  "thumbnail": "http://books.google.com/books/content?id=r1BDDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+              },
+              "language": "en",
+              "previewLink": "http://books.google.com/books?id=r1BDDwAAQBAJ&printsec=frontcover&dq=horror&hl=&cd=1&source=gbs_api",
+              "infoLink": "http://books.google.com/books?id=r1BDDwAAQBAJ&dq=horror&hl=&source=gbs_api",
+              "canonicalVolumeLink": "https://books.google.com/books/about/Horror_Film.html?hl=&id=r1BDDwAAQBAJ"
+          },
+          "saleInfo": {
+              "country": "US",
+              "saleability": "NOT_FOR_SALE",
+              "isEbook": false
+          },
+          "accessInfo": {
+              "country": "US",
+              "viewability": "PARTIAL",
+              "embeddable": true,
+              "publicDomain": false,
+              "textToSpeechPermission": "ALLOWED",
+              "epub": {
+                  "isAvailable": false
+              },
+              "pdf": {
+                  "isAvailable": true,
+                  "acsTokenLink": "http://books.google.com/books/download/Horror_Film-sample-pdf.acsm?id=r1BDDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+              },
+              "webReaderLink": "http://play.google.com/books/reader?id=r1BDDwAAQBAJ&hl=&source=gbs_api",
+              "accessViewStatus": "SAMPLE",
+              "quoteSharingAllowed": false
+          },
+          "searchInfo": {
+              "textSnippet": "An introduction to the horror film genre."
+          }
+      }
+        ]
+        }
+      
