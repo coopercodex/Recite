@@ -180,3 +180,13 @@ margin: 0;
   flex-direction: column;
   flex-wrap: wrap;
 }
+
+.books-page {
+  background-image: url('https://miro.medium.com/max/1200/1*et_kPtJUzLi0GMYP9JlVmg.gif');
+  background-color: bisque;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  animation: App-logo-spin infinite 20s linear;
+}
+
