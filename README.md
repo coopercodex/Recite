@@ -1,5 +1,6 @@
 # Recite
-- screen shot here
+![image](https://user-images.githubusercontent.com/105816411/201587799-b9421b11-8977-444a-bc60-0b66268e4bf4.png)
+
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -26,6 +27,8 @@
 - Delete favorites from the favorite section if you change your mind.
 
 ## Project Demo
+
+![GorgeousDismalAstrangiacoral-size_restricted](https://user-images.githubusercontent.com/105816411/201591639-8e547712-ff6f-4e63-b6e7-62d4600426a5.gif)
 
 
 

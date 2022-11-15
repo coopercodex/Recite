@@ -13,6 +13,7 @@ export const Searchbar = ({ setBooks }) => {
 
   const handleChange = (event) => {
     let currentBook = event.target.value;
+
     if (currentBook === 'bible') {
       currentBook = 'kingjames'
       setBook(currentBook)
