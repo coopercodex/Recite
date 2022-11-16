@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
-import endpoints from '../Endpoints'
- 
+
+const key = 'AIzaSyDtkwfURWB2svWs7KliBJgLfs0RvGymjSc'
+
+
 
 
 
@@ -31,7 +33,7 @@ export const Searchbar = ({ setBooks }) => {
   }
 
   const getData = async () => {
-    await fetch(`https://www.googleapis.com/books/v1/volumes?q=${book}&key=${endpoints.key}&maxResults=10`)
+    await fetch(`https://www.googleapis.com/books/v1/volumes?q=${book}&key=${key}&maxResults=10`)
       .then(response => response.json())
       .then(data => { setBooks(data.items) })
       .catch(error => {console.log(error)})

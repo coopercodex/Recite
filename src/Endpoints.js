@@ -2,7 +2,6 @@
 const key = 'AIzaSyDtkwfURWB2svWs7KliBJgLfs0RvGymjSc'
 
 
-
 const endpoints = {
 
   endPointsNewest: `https://www.googleapis.com/books/v1/volumes?q=fiction&key=${key}`,

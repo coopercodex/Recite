@@ -7,7 +7,8 @@ import Footer from './components/Footer';
 import { Home } from './components/Home';
 
 
-const App = ({ books }) => {
+const App = () => {
+
   return (
     <>
       <div className="App">
