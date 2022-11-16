@@ -3,7 +3,7 @@ describe('recite', () => {
     cy.visit('http://localhost:3000/')
     cy.intercept(
       'GET',
-      'https://www.googleapis.com/books/v1/volumes?q=fiction&key=AIzaSyDVtt4Gtd6ZY_z03wWGO7Bbib7z_DnhxYk',
+      'https://www.googleapis.com/books/v1/volumes?q=fiction&key=AIzaSyDtkwfURWB2svWs7KliBJgLfs0RvGymjSc',
       {
         fixture: 'books.json',
       }
