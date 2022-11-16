@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
+
 const key = 'AIzaSyDtkwfURWB2svWs7KliBJgLfs0RvGymjSc'
+
 
 
 
@@ -13,6 +15,7 @@ export const Searchbar = ({ setBooks }) => {
 
   const handleChange = (event) => {
     let currentBook = event.target.value;
+
     if (currentBook === 'bible') {
       currentBook = 'kingjames'
       setBook(currentBook)
