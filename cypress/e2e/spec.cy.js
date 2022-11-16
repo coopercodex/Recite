@@ -3,7 +3,7 @@ describe('recite', () => {
     cy.visit('http://localhost:3000/')
     cy.intercept(
       'GET',
-      'https://www.googleapis.com/books/v1/volumes?q=fiction&key=AIzaSyDtkwfURWB2svWs7KliBJgLfs0RvGymjSc',
+      'https://www.googleapis.com/books/v1/volumes?q=fiction&key=',
       {
         fixture: 'books.json',
       }
@@ -12,7 +12,7 @@ describe('recite', () => {
 
   it('Should have a title when a user visits home page', () => {
     cy.get('.home-link > h1').contains('Recite')
-  })
+  })    
 
   it('Should have a title when a user visits home page', () => {
     cy.get('.footer').contains('Recite')
