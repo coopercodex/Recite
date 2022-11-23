@@ -6,7 +6,7 @@ export const Books = ({ favs, deleteFav }) => {
     <>
       {favs.length > 0 ? <h1>Favorites: {favs[0]?.volumeInfo.categories[0]} </h1> : <h1>Add Favorites 💌</h1>}
       {!favs.length && <div className='loading'>
-        <img className='loading' src='http://media0.giphy.com/media/1sSfhxzWHJ4vC/giphy.gif' alt='loading' />
+        <h1>No Favorites Added!</h1>
       </div>}
 
       <div className='main'>
