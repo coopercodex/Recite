@@ -52,9 +52,9 @@ export const Genres = ({ title, apiUrl }) => {
             <div className='loading'>
               <img className='loading' src='https://media.tenor.com/wfEN4Vd_GYsAAAAM/loading.gif' alt='loading' />
             </div>
-          ) : (books.map((book, id) => (
-
-            <div className='main-genre'><img src={book?.volumeInfo.imageLinks.thumbnail} alt='book cover' id={book?.id} key={book?.id} />
+          ) : (books?.map((book, id) => (
+            <div className='main-genre'>
+              {book?.volumeInfo.imageLinks ?  <img src={book?.volumeInfo.imageLinks.thumbnail} alt='book cover' id={book?.id} key={book?.id} /> : <h4>book not available</h4>}
               <div className='book-hover'>
                 <h3>Fav? <FcLike onClick={() => addFavorite(book.id)} /> </h3>
                 <h4>Rating: </h4>
